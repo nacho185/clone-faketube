@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>youtube-clone</title>
+  </head>
+
+  <body>
+    <!--start search-->
+    <div class="header">
+      <div class="header-left">
+        <i onclick="myFunction()" id="menu" class="fas fa-bars"></i>
+        <span style="font-size: 1.5rem"
+          ><i id="only-icons-youtube" class="fab fa-youtube"></i>
+          <span class="faketube" style="font-size: 1.5rem">Faketube</span></span
+        >
+      </div>
+
+      <div id="the-search-bar" class="header-search-bar">
+        <form action="">
+          <input type="text" placeholder="search..." />
+        </form>
+      </div>
+
+      <div class="header-icons">
+        <i
+          onclick="mySearchbar()"
+          id="search-bar-icon"
+          class="fas fa-search"
+        ></i>
+        <i id="only-icons" class="fas fa-video"></i>
+        <i id="only-icons" class="fas fa-bell"></i>
+        <i id="only-icons" class="fas fa-user-circle"></i>
+      </div>
+    </div>
+    <!--end search
+    -->
+
+    <!--main body start-->
+    <div class="main-body">
+      <!--start sidebar-->
+      <div id="hide-sidebar" class="side-bar">
+        <div class="side-bar-categories">
+          <div class="side-bar-category">
+            <i id="only-icons" class="fas fa-home"></i>
+            <span>Home</span>
+          </div>
+          <!---->
+          <div class="side-bar-category">
+            <i id="only-icons" class="fas fa-fire"></i>
+            <span>Trending</span>
+          </div>
+          <!---->
+          <div class="side-bar-category">
+            <i id="only-icons" class="fas fa-lock"></i>
+            <span>Subscriptions</span>
+          </div>
+          <!---->
+          <div class="side-bar-category">
+            <button onclick="darkMode()">Theme</button>
+          </div>
+        </div>
+
+        <hr />
+        <div class="side-bar-categories">
+          <div class="side-bar-category">
+            <i id="only-icons" class="fas fa-book-open"></i>
+            <span>Librabry</span>
+          </div>
+          <!---->
+          <div class="side-bar-category">
+            <i id="only-icons" class="fas fa-history"></i>
+            <span>History</span>
+          </div>
+          <!---->
+          <div class="side-bar-category">
+            <i id="only-icons" class="fas fa-play"></i>
+            <span>Your videos</span>
+          </div>
+          <!---->
+          <div class="side-bar-category">
+            <i id="only-icons" class="fas fa-clock"></i>
+            <span>Watch Later</span>
+          </div>
+          <!---->
+          <div class="side-bar-category">
+            <i id="only-icons" class="fas fa-thumbs-up"></i>
+            <span>Liked Videos</span>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <!--end  sidebar-->
+
+      <!---->
+      <!--start video-body-->
+      <div class="videos" id="video-container">
+        <h1>recommended</h1>
+        <div class="portfolio-div">
+          <span class="portfolio"><a href="#">Back to Portfolio</a></span>
+        </div>
+        <div class="videos-container">
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img
+                src="https://source.unsplash.com/random/200x200?sig=3"
+                alt="sorry no video img"
+              />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img
+                  src="https://source.unsplash.com/random/200x200?sig=3"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img src="https://picsum.photos/200" alt="sorry no video img" />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img src="https://picsum.photos/200" alt="sorry no video img" />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img
+                  src="https://source.unsplash.com/random/200x200?sig=3"
+                  alt=""
+                />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img
+                src="https://source.unsplash.com/random/200x200?sig=3"
+                alt="sorry no video img"
+              />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img src="https://picsum.photos/200" alt="sorry no video img" />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img
+                src="https://source.unsplash.com/random/200x200?sig=3"
+                alt="sorry no video img"
+              />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img src="https://picsum.photos/200" alt="sorry no video img" />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img
+                src="https://source.unsplash.com/random/200x200?sig=3"
+                alt="sorry no video img"
+              />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img src="https://picsum.photos/200" alt="sorry no video img" />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img
+                src="https://source.unsplash.com/random/200x200?sig=3"
+                alt="sorry no video img"
+              />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img src="https://picsum.photos/200" alt="sorry no video img" />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+
+          <!--single video start-->
+          <!--video-->
+          <div class="video">
+            <div class="video-thumbnail">
+              <img src="https://picsum.photos/200" alt="sorry no video img" />
+            </div>
+            <!--video details-->
+            <div class="video-details">
+              <div class="author">
+                <img src="https://picsum.photos/200" alt="" />
+              </div>
+              <div class="title">
+                <h3>title of video Lorem | ipsum dolor sit amet.</h3>
+                <a href=""> channel link | ipsum dolor.</a>
+                <span>10m Views = 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <!--single video end-->
+        </div>
+      </div>
+    </div>
+    <!--end video-body-->
+
+    <!--main body end-->
+
+    <!--scripts-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
